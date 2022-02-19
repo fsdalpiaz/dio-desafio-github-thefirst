@@ -53,33 +53,35 @@ A partir do git add o arquivo passa a ser Tracked e passa diretamente ao estági
 - git add . :adiciona todos os arquivos e diretórios untracked
 
 
-git commit: fazer commit
+- git commit: fazer commit
 
-No git temos dois ambientes:
+# No git temos dois ambientes:
 
-Ambiente de desenvolvimento: é o ambiente em que temos os arquivos locais, os diretórios de trabalho e Staging area. Você cria os arquivos no diretório local, você faz um git add para passar esses arquivos para Stage e faz git commit para registrá-los no seus repositório local.
+- Ambiente de desenvolvimento: é o ambiente em que temos os arquivos locais, os diretórios de trabalho e Staging area. Você cria os arquivos no diretório local, você faz um git add para passar esses arquivos para Stage e faz git commit para registrá-los no seus repositório local.
 
-Servidor: é onde transferimos a fotografia do código do repositório local para o repositório remoto do git com todas as infos do projeto.
+- Servidor: é onde transferimos a fotografia do código do repositório local para o repositório remoto do git com todas as infos do projeto.
 
 
-Para exibir as configs do Git:
+### Para exibir as configs do Git:
 
-git config --list
+- git config --list
 
-Para alterar alguma info:
+### Para alterar alguma info:
 
-git config --global --unset e a info que deseja alterar ex.: user.name, user.email
+- git config --global --unset e a info que deseja alterar ex.: user.name, user.email
 
-Para inserir novamente:
+### Para inserir novamente:
 
-git config --global a info que deseja inserir ex.: user.name, user.email
+- git config --global a info que deseja inserir ex.: user.name, user.email
 
-Para enviar arquivos para o repositório:
+### Para enviar arquivos para o repositório:
 
-git push origin main
+- git push origin main
 
-Para puxar o arquivo do git antes de alterar e fazer push (quando há conflito):
+### Para puxar o arquivo do git antes de alterar e fazer push (quando há conflito por git clone e edição simultânea em máquinas locais, que geram diferentes versões do mesmo código):
 
-git pull origin main (ou master)
+- git pull origin main (ou master)
 
-git remote -v -> mostra os repositórios remotos para o qual o repositório local está apontado
+### Demais:
+
+- git remote -v -> mostra os repositórios remotos para o qual o repositório local está apontado
